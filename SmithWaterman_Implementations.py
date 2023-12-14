@@ -4,7 +4,7 @@ import numpy as np
 def sequential():
     def matrix(a, b, score=3, cost=2):
 
-        H = np.zeros((len(a) + 1, len(b) + 1), np.int)
+        H = np.zeros((len(a) + 1, len(b) + 1), int)
 
         for i, j in itertools.product(range(1, H.shape[0]), range(1, H.shape[1])):
 
@@ -53,7 +53,7 @@ def sequential():
 def parallel():
     def matrix(a, b, score=3, cost=2):
 
-        H = np.zeros((len(a) + 1, len(b) + 1), np.int)
+        H = np.zeros((len(a) + 1, len(b) + 1), int)
 
         for i, j in itertools.product(range(1, H.shape[0]), range(1, H.shape[1])):
 
